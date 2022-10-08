@@ -23,7 +23,7 @@ public class UDPExecuteEditor : EditorWindow
     static DateTime LastRecvTime;
 
 
-    [MenuItem("Tools/程序专用/临时/UDPExecuteEditor %#t")]
+    [MenuItem("Tools/MacroDeck/UDPExecuteEditor %#t")]
     static public void OpenOpenTrackerMoveComponentInspector()
     {
         EditorWindow.GetWindow<UDPExecuteEditor>("UDPExecuteEditor");
