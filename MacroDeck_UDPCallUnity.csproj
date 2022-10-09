@@ -2,8 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <Version>1.0.0</Version>
 	<UseWindowsForms>true</UseWindowsForms>
+	<AssemblyVersion>1.0.0</AssemblyVersion>
+	<PlatformTarget>x64</PlatformTarget>
+	<RootNamespace>Sulbon.UDPCallUnity</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,5 +18,11 @@
       <HintPath>D:\Program Files\Macro Deck\Macro Deck 2.dll</HintPath>
     </Reference>
   </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties extensionmanifest_1json__JsonSchema="https://docs.renovatebot.com/renovate-schema.json" /></VisualStudio></ProjectExtensions>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy /Y &quot;$(TargetDir)$(TargetName).dll&quot; &quot;C:\Users\\sulbon\AppData\Roaming\Macro Deck\plugins\Sulbon.UDPCallUnity\$(TargetName).dll&quot;" />
+  </Target>
 
 </Project>
