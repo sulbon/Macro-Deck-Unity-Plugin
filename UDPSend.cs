@@ -24,7 +24,7 @@ namespace Sulbon.UDPCallUnity
         public override string Name => "UDP Send Action";
 
         // A short description what the action can do
-        public override string Description => "UDP Send Menu Action";
+        public override string Description => "Execute Unity Menu Action or Change Layout. Requires MacroDeckUnityUDPServer.unitypackage in your unity project";
 
         // Optional; Add if this action can be configured. This will make the ActionConfigurator calling GetActionConfigurator();
         public override bool CanConfigure => true;
